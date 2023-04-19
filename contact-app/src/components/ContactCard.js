@@ -1,4 +1,5 @@
 import React from "react";
+import user from "../images/user.png";
 
 const ContactCard = (props) => {
     // Instead of always typing props.contact.name we can directly use name
@@ -6,6 +7,7 @@ const ContactCard = (props) => {
 
     return (
         <div className="item">
+            <img className="ui avatar image" src={user} alt="user"></img>
             <div className="content">
                 <div className="header">{name}</div>
                 <div>{email}</div>
