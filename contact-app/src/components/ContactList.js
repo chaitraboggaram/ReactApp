@@ -1,4 +1,5 @@
 import React from "react";
+import ContactCard from "./ContactCard"
 
 // Getting the props from App.js which is using ContactList tag
 const ContactList = (props) => {
@@ -7,13 +8,9 @@ const ContactList = (props) => {
     // Mapping the contact list props using below function and add the below function in return statement below to complete the rendering
     const renderContactList = props.contacts.map((contact) => {
         return (
-            <div className="item">
-                <div className="content">
-                    <div className="header">{contact.name}</div>
-                    <div>{contact.email}</div>
-                </div>
-                <i className="trash alternate outline icon"></i>
-            </div>
+            // Content about the props or contactlist is now added to ContactCard.js in ContactCard fuction
+            // Import ContactCard.js and passing contact to here
+            <ContactCard contact={contact}></ContactCard> 
         ); 
     }
     );
