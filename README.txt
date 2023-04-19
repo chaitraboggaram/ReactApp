@@ -25,3 +25,5 @@ ALWAYS MAKE SURE YOU SAVE THE CHANGES, IF NOT YOU GET ERRORS SAYING COMPONENTS N
 # Import and Export a .js file
 If a .js file is used in another file so import Header.js we should add import Header from "./Header";
 To make sure the import works --> We need to export the Header file as well, so use export default Header;
+
+
