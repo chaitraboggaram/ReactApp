@@ -1,3 +1,13 @@
+# Install npm
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+brew update
+brew install node
+
+# Check if installation is success
+node -v
+npm -v
+
 # Create react app
 npx create-react-app <AppName>
 
@@ -5,6 +15,10 @@ npx create-react-app <AppName>
 .\cd <AppName>
 npm start
 Once its done, webpage can be accessed at http://localhost:3000
+
+# Install react-scripts
+npm install react react-scripts
+
 
 # About the folders
 node_modules --> Has all the third party tools and libraries we installed	--> Never touch this one! --> This is very huge and also it is not required to be backed up
